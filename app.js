@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const socketIO = require('socket.io');
 const app = express();
-const port = 4000 || process.env.PORT;
+const port= process.env.PORT;
 
 // Cors is used for inter communication between url
 const users = [];
@@ -32,5 +32,5 @@ app.get('/',(req,res)=>{
     res.send("IamWorking");
 })
 server.listen(port,()=>{
-    console.log(`server is working on http://localhost:${port}`)
+  
 })
